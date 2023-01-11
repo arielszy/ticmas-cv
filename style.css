@@ -1,0 +1,28 @@
+div aside,
+div main {
+    padding: 20px;
+    width: 90vh;
+    height: 100vh; /*100% viewport height*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+aside {
+    background-color: gray;
+    text-align: center;
+    font-size: 12px;
+}
+
+aside h1 {
+    font-size: 30px
+}
+
+aside h2 {
+    font-size: 18px;
+}aside h3 {
+    font-size: 25px;
+}
+
+main {
+    background-color: darkgray;
+
+}
