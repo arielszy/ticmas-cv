@@ -46,10 +46,17 @@ main ul {
     list-style: none;
     /* Remove default bullets */
 }
-
+main h2::before {
+    content: "\261B";
+    color: #1c2949;
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
 main ul li::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "\2713";
+    /* Add content: \2713 is the CSS Code/unicode for a checkmark */
     color: #348caa;
     /* Change the color */
     font-weight: bold;
