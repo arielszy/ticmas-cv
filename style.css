@@ -13,6 +13,9 @@ aside {
     text-align: center;
     font-size: 12px;
 }
+aside * {
+    margin-bottom: 20px;
+}
 
 aside h1 {
     border: 3px #848482 solid;
@@ -26,7 +29,6 @@ aside h2 {
 
 aside h3 {
     border: 1px #848482 solid;
-
     font-size: 20px;
 }
 
@@ -71,4 +73,26 @@ main ul li::before {
 
 .container {
     padding: 15px;
+}
+.opciones{
+    text-align: center;
+    text-transform: capitalize;
+}
+.opciones ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.opciones li{
+    float: left;
+    border: #6D6968 1px solid;
+    border-radius: 50PX;
+    padding: 5px;
+    cursor: pointer;
+}
+.opciones li:hover{
+    background-color: rgb(219, 238, 253);
+}.opciones li:active{
+    background-color: rgb(190, 225, 250);
 }
