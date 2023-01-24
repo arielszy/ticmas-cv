@@ -23,71 +23,72 @@
 <body>
 <div class="container">
     <nav class="opciones"><ul>
-        <li>Editar datos</li>
-        <li>agrandar letra</li>
-        <li>achicar letra</li>
+        <li id="edit">Editar datos</li>
+        <li id="+">agrandar letra</li>
+        <li id="-">achicar letra</li>
     </ul></nav>
+    <h1 class="tit">Curriculum Vitae</h1>
     <div class="row">
         <aside class="col-4">
             <div>
-                <h1>Curriculum Vitae</h1>
+                <h1 class="edit">Szyniak Ariel</h1>
                 <H2>full stack web and mobile developer</H2>
             </div>
             <div>
                 <h3>Datos Personales</h3>
-                <p>
-                    BIRTHDAY : 15 April 1990</br>
-                    WEBSITE : www.example.com</br>
-                    PHONE : +1 123 000 4444</br>
-                    EMAIL : your@example.com</br>
-                    Location : California, USA
-                </p>
+                <ul>
+                    <li>WEBSITE : <span class="edit">www.example.com</span></li><!-- se agrega el span para poder editar el contenido mediante js -->
+                    <li>BIRTHDAY : <span class="edit">15 April 1990</span></li>
+                    <li>PHONE : <span class="edit">1 123 000 4444</span></li>
+                    <li>EMAIL : <span class="edit">your@example.com</span></li>
+                    <li>Location : <span class="edit">WorldWide</span></li>
+                </ul>
             </div>
             <div>
                 <h3>Idiomas</h3>
                 <p>
-                    Español : Nativo</br>
-                    Ingles : Avanzado</br>
-                    Frances : Basico</br>
+                    Español : <span class="edit">Nativo</span> </br>
+                    Ingles : <span class="edit">Avanzado</span></br>
+                    Frances : <span class="edit">Basico</span></br>
                 </p>
             </div>
         </aside>
 
         <main class="col-8">
             <div>
-                <h2>Formaci&oacute;n Acad&eacute;mica</h2>
+                <h2 id="fa">Formaci&oacute;n Acad&eacute;mica <span>+</span></h2>
                 <ul>
-                    <li>dsds</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Primeros estudios en un lugar</li>
+                    <li>otros estudios en otro lugar</li>
+                    <li>otros estudios en otro lugar</li>
+                    <li>otros estudios en otro lugar</li>
                 </ul>
             </div>
             <div>
-                <h2>Experiencia laboral</h2>
+                <h2 id="el">Experiencia laboral <span>+</span></h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Lugar de trabajo 1</li>
+                    <li>Lugar de trabajo 2</li>
+                    <li>Lugar de trabajo 3</li>
+                    <li>Lugar de trabajo 4</li>
                 </ul>
             </div>
             <div>
-                <h2>Portfolio</h2>
+                <h2 id="pf">Portfolio <span>+</span></h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Caso 1 : link.com</li>
+                    <li>Caso 2 : link.com</li>
+                    <li>Caso 3 : link.com</li>
+                    <li>Caso 4 : link.com</li>
                 </ul>
             </div>
             <div>
-                <h2>Habilidades</h2>
+                <h2 id="hab">Habilidades <span>+</span></h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>puedo hacer esto</li>
+                    <li>tambien esto</li>
+                    <li>esto</li>
+                    <li>y esto</li>
                 </ul>
             </div>
         </main>
@@ -96,5 +97,6 @@
     </div>
 </div>
 </body>
+<script src="code.js"></script><!-- el js lo cargo al final, para que se cree el DOM primero -->
 
 </html>

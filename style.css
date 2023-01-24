@@ -42,6 +42,7 @@ main h2 {
     text-align: center;
     border: 3px dimgray solid;
     font-size: 20px;
+    pointer-events: none;
 }
 
 main ul {
@@ -55,6 +56,14 @@ main h2::before {
     display: inline-block;
     width: 2em;
     margin-left: -1em;
+}main h2 span {
+    color: #1c2949;
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: 1em;
+    cursor: pointer;
+    pointer-events: all;
 }
 main ul li::before {
     content: "\2713";
@@ -90,9 +99,19 @@ main ul li::before {
     border-radius: 50PX;
     padding: 5px;
     cursor: pointer;
+    user-select: none;/*evita que se puea seleccionaar el texto*/
 }
 .opciones li:hover{
     background-color: rgb(219, 238, 253);
 }.opciones li:active{
     background-color: rgb(190, 225, 250);
+}
+aside ul{
+    margin: 0%;
+    padding: 0%;   
+    list-style: none;
+}
+.tit{
+    text-align: center;
+    color: #7a7f8a;
 }
