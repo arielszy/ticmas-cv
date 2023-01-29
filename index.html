@@ -20,10 +20,11 @@
     <meta property="og:desctription" content="CV para Proyecto final del curso frontend de Ticmas" />
 </head>
 
-<body>
+<body onload="loadData()">
 <div class="container">
     <nav class="opciones"><ul>
         <li id="edit">Editar datos</li>
+        <li id="default">Cargar original</li>
         <li id="+">agrandar letra</li>
         <li id="-">achicar letra</li>
     </ul></nav>
@@ -31,25 +32,25 @@
     <div class="row">
         <aside class="col-4">
             <div>
-                <h1 class="edit">Szyniak Ariel</h1>
+                <h1 class="edit" id="name">Szyniak Ariel</h1>
                 <H2>full stack web and mobile developer</H2>
             </div>
             <div>
                 <h3>Datos Personales</h3>
                 <ul>
-                    <li>WEBSITE : <span class="edit">www.example.com</span></li><!-- se agrega el span para poder editar el contenido mediante js -->
-                    <li>BIRTHDAY : <span class="edit">15 April 1990</span></li>
-                    <li>PHONE : <span class="edit">1 123 000 4444</span></li>
-                    <li>EMAIL : <span class="edit">your@example.com</span></li>
-                    <li>Location : <span class="edit">WorldWide</span></li>
+                    <li>WEBSITE : <span class="edit" id="WEBSITE">www.example.com</span></li><!-- se agrega el span para poder editar el contenido mediante js -->
+                    <li>BIRTHDAY : 15 April 1990</li>
+                    <li>PHONE : <span class="edit" id="PHONE">1 123 000 4444</span></li>
+                    <li>EMAIL : <span class="edit" id="EMAIL">your@example.com</span></li>
+                    <li>Location : <span class="edit" id="Location">WorldWide</span></li>
                 </ul>
             </div>
             <div>
-                <h3>Idiomas</h3>
+                <h3>Idiomas <span>+</span></h3>
                 <p>
-                    Español : <span class="edit">Nativo</span> </br>
-                    Ingles : <span class="edit">Avanzado</span></br>
-                    Frances : <span class="edit">Basico</span></br>
+                    Español : Nativo </br>
+                    Ingles : Avanzado</br>
+                    Frances : Basico</br>
                 </p>
             </div>
         </aside>
