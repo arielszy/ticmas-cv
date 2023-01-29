@@ -1,4 +1,9 @@
+html {
+    font-size: 100%;
+}
+
 body {
+    font-size: 1rem;
     margin: auto;
     width: 100vh;
     height: 100vh;
@@ -6,42 +11,58 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+h1 {
+    font-size: 2rem;
+
+}
+
+h2 {
+    font-size: 1.3rem;
+
+}
+
+h3,
+aside li {
+    font-size: 0.7rem;
+
+}
+
+main li {
+    font-size: 1rem;
+
+}
+
 aside {
     color: #6D6968;
     padding: 20px;
-    background-color: #BCC6CC	;
+    background-color: #BCC6CC;
     text-align: center;
-    font-size: 12px;
 }
-aside * {
-    margin-bottom: 20px;
+
+aside h1,
+aside h2,
+aside h3 {
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 aside h1 {
     border: 3px #848482 solid;
-    font-size: 25px
 }
 
 aside h2 {
-    font-size: 15px;
-
-}
-
-aside h3 {
     border: 1px #848482 solid;
-    font-size: 20px;
 }
 
 main {
     color: #1c2949;
-    padding: 20px;
+    padding: 1rem;
     background-color: #f0f4f7;
 }
 
 main h2 {
     text-align: center;
     border: 3px dimgray solid;
-    font-size: 20px;
     pointer-events: none;
 }
 
@@ -49,6 +70,7 @@ main ul {
     list-style: none;
     /* Remove default bullets */
 }
+
 main h2::before {
     content: "\261B";
     color: #1c2949;
@@ -56,7 +78,9 @@ main h2::before {
     display: inline-block;
     width: 2em;
     margin-left: -1em;
-}main h2 span {
+}
+
+main h2 span {
     color: #1c2949;
     font-weight: bold;
     display: inline-block;
@@ -65,6 +89,7 @@ main h2::before {
     cursor: pointer;
     pointer-events: all;
 }
+
 main ul li::before {
     content: "\2713";
     /* Add content: \2713 is the CSS Code/unicode for a checkmark */
@@ -83,35 +108,67 @@ main ul li::before {
 .container {
     padding: 15px;
 }
-.opciones{
+
+.opciones {
     text-align: center;
     text-transform: capitalize;
 }
-.opciones ul{
+
+.opciones ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 12px;
 }
-.opciones li{
+
+.opciones li {
     float: left;
     border: #6D6968 1px solid;
     border-radius: 50PX;
     padding: 5px;
     cursor: pointer;
-    user-select: none;/*evita que se puea seleccionaar el texto*/
+    user-select: none;
+    /*evita que se puea seleccionaar el texto*/
 }
-.opciones li:hover{
+
+.opciones li:hover {
     background-color: rgb(219, 238, 253);
-}.opciones li:active{
+}
+
+.opciones li:active {
     background-color: rgb(190, 225, 250);
 }
-aside ul{
+
+aside ul {
     margin: 0%;
-    padding: 0%;   
+    padding: 0%;
     list-style: none;
 }
-.tit{
+
+.tit {
     text-align: center;
     color: #7a7f8a;
+}
+
+/**
+a continuacion clases para cambio de tamaño de letra
+*/
+.f0 {
+    font-size: 0.8rem;
+}
+
+.f1 {
+    font-size: 0.9rem;
+}
+
+.f2 {
+    font-size: 1rem;
+}
+
+.f3 {
+    font-size: 1.1rem;
+}
+
+.f4 {
+    font-size: 1.2rem;
 }
