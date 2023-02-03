@@ -5,12 +5,16 @@ html {
 body {
     font-size: 1rem;
     margin: auto;
-    width: 100vh;
+    width: 110vh;
     height: 100vh;
     /*100% viewport height*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+.container{
+    background-color: #f0f4f7;
+    padding: 20px;
+}
 h1 {
     font-size: 2rem;
 
@@ -34,7 +38,7 @@ main li {
 
 aside {
     color: #6D6968;
-    padding: 20px;
+    padding-bottom: 20px;
     background-color: #BCC6CC;
     text-align: center;
 }
@@ -57,7 +61,7 @@ aside h2 {
 main {
     color: #1c2949;
     padding: 1rem;
-    background-color: #f0f4f7;
+    background-color: #fff;
 }
 
 main h2 {
@@ -105,13 +109,10 @@ main ul li::before {
     /* Also needed for space (tweak if needed) */
 }
 
-.container {
-    padding: 15px;
-}
-
 .opciones {
     text-align: center;
     text-transform: capitalize;
+    margin-top: 20px;
 }
 
 .opciones ul {
@@ -148,6 +149,7 @@ aside ul {
 .tit {
     text-align: center;
     color: #7a7f8a;
+    margin: 0%;
 }
 
 /**
