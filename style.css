@@ -67,7 +67,6 @@ main {
 main h2 {
     text-align: center;
     border: 3px dimgray solid;
-    pointer-events: none;
 }
 
 main ul {
@@ -91,7 +90,6 @@ main h2 span {
     width: 2em;
     margin-left: 1em;
     cursor: pointer;
-    pointer-events: all;
 }
 
 main ul li::before {

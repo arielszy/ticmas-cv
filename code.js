@@ -22,9 +22,8 @@ function changeClass(previous, next) {
 }//hasta aca cambio tamaño
 
 
-document.getElementById("edit").addEventListener('click', function () {
+document.getElementById("edit").addEventListener('click', function () {//habilita y deshabilita la edicion
     const lista = document.getElementsByClassName("edit");
-
     if (this.innerHTML === "Editar datos") {
         for (let index = 0; index < lista.length; index++) {
             lista[index].setAttribute("contentEditable", "true");
@@ -43,22 +42,20 @@ document.getElementById("edit").addEventListener('click', function () {
 
 });
 
-/* 
-document.body.addEventListener('click',function(){
-getElementById(this.id).append('li','nuevo item');
-});
 
-
-
-
- */
-
+function addElement(id) { //funcion para agregar item a los listados
+    var ul = document.getElementById(id);
+    var li = document.createElement("li");
+   // li.setAttribute("id", "element" + children)
+   var text = prompt('Ingrese el texto del nuevo item');
+    li.appendChild(document.createTextNode(text));
+    ul.appendChild(li)
+}
 
 
 
 function loadData() { //si fue modificado carga las modificaciones
     let modified = localStorage.getItem("modified");
-    console.log(modified);
     if (modified === "true") {
         document.getElementById("name").innerHTML = localStorage.getItem("name");
         document.getElementById("WEBSITE").innerHTML = localStorage.getItem("WEBSITE");
