@@ -46,10 +46,12 @@ document.getElementById("edit").addEventListener('click', function () {//habilit
 function addElement(id) { //funcion para agregar item a los listados
     var ul = document.getElementById(id);
     var li = document.createElement("li");
-   // li.setAttribute("id", "element" + children)
    var text = prompt('Ingrese el texto del nuevo item');
-    li.appendChild(document.createTextNode(text));
+   if (text !=null && text !='') {
+     li.appendChild(document.createTextNode(text));
     ul.appendChild(li)
+   }
+   
 }
 
 
